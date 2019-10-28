@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reporte semanal</title>
+    <style>
+        html, body{
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .heading{
+            display: flex;
+            padding: 8px 16px;
+            align-items: center;
+        }
+        .heading img{
+            height: 48px;
+        }
+
+
+        .section_container{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 816px;
+        }
+
+        .section_container>*{
+            flex: 1;
+        }
+
+        .section_container img{
+            width: 90vw;
+            width: calc(100%-16px);
+            max-width: 800px;
+            border-radius: 12px;
+            margin: 8px;
+        }
+
+        .section{
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            background: black;
+            color: white;
+            align-items: center;
+            width: 100vw;
+            max-width: 800px;
+            border-radius: 12px;
+            margin: 8px;
+            box-sizing: border-box;
+        }
+        
+        .section img{
+            width: 300px
+        }
+
+        .text{
+            margin: 8px 0px;
+            width: 100%;
+            max-width: 800px;
+            font-size: 1.5em;
+        }
+
+        /*.section>*{
+            width: 100%;
+            max-width: 800px;
+        }*/
+
+        .section .section_content{
+            font-size: 1.3em;
+            font-weight: 300;
+            white-space: pre-line;
+            text-overflow: clip;
+        }
+
+        h1{
+            font-size: 48px;
+            margin: 0px 8px;
+            margin-top: 8px;
+            color: #0070c0;
+        }
+        h2{
+            font-weight: 900;
+            font-size: 3.2em;
+            color: rgba(255,255,255,0.8);
+            margin: 8px 0px
+        }
+        h3{
+            margin: 4px 0px;
+            font-size: 1.6em;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <img src="https://ctrl-alt-tec.hackclub.com/img/logo-block.png" alt="" srcset="">
+        <h1>Semana del 27 de octubre</h1>
+    </div>
+
+   <!--  <div class="section">
+        <h2>Gracias por la semana pasada</h2>
+        <div class="news">
+            <img src="https://drive.google.com/uc?export=view&id=1afOvEUNDcQMyZNf3eQNREa3_b058iJ83" alt="" srcset="">
+            <div class="news_content">
+                <h3>VENTA DE HALLOWEEN</h3>
+                El pasado viernes se llevó a cabo en la explanada de profesional, la venta de grupos y sociedades estudiantiles. 
+                Nosotros vendimos galletas. Muchísimas gracias a todo@s l@s que nos apoyaron vendiendo, comprando y fiundiendo. La venta fue 
+                todo un éxito y el dinero recaudado nos servirá para hacer más proyectos, eventos y actividades para todos nosotros. 
+            </div>    
+        </div>
+    </div> -->
+
+
+    <div class="section_container">
+        <div class="section" >
+            <h2>Venta de Halloween</h2>
+            <span class="section_content">
+                El pasado viernes se llevó a cabo en la explanada de Profesional, la venta de grupos y socieddes estudiantiles en la que gracias al apoyo de nuestros integrantes, vendimos galletas. 
+                Muchas gracias a tod@s l@s que vendieron, compraron y difundieron. La venta fue todo un éxito y el dinero recaudado servirá para hacer más proyectos, eventos y actividades en el futuro.
+                Este viernes también habrá una venta en la explanada de Preparatoria. Si te gustaría apoyar, haznos saber en el canal de #negocios en el Slack 
+            </span>
+        </div>
+
+        <img src="https://drive.google.com/uc?export=view&id=1YVcrPrFnbM7-0OM_cUBAPtputmJvgwHR" alt="" srcset="">
+
+    </div>
+
+    <div class="section" style="background:#082f4a">
+        <h2>El reto de esta semana</h2>
+        <span class="section_content">
+            Realiza un método spiralOf(n) que genere un arreglo 2D de n*n, con los números de 1 a n^2 formando un espiral. Ejemplo: spiralOf(4) 
+
+            [[1,  2,  3,  4], 
+            [12, 13, 14, 5], 
+            [11, 16, 15, 6], 
+            [10, 9,  8,  7]] 
+        </span>
+    </div>
+
+
+    <div class="section_container">
+        <div class="section" style="background: rgb(100,100,100);">
+            <h2>Hack Day</h2>
+            <img src="" alt="">
+            <span class="section_content">
+                Durante estas semanas estaremos enfocándonos en la planeación de nuestro Hack Day, un evento al estilo rally en el que se aprenden diversos conceptos de programación. Ya tenemos identificadas algunas actividades, pero es necesario escuchar la opinión de tod@s. Durante la semana les compartiremos más detalles.
+            </span>
+        </div>
+        <div class="section" style="background: green;">
+            <h2>#TeamTrees</h2>
+            <img src="" alt="">
+            <span class="section_content">
+                También estaremos participando en la campaña #TeamTrees con el objetivo de generar dinero para poder donar a una causa que propone plantar árboles alrededor del mundo. Esta semana nos enfocaremos en hacer anuncios para que la gente pueda donar. Más info en el canal de #marketing de slack.
+            </span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>El reto de la semana pasada</h3>
+        <span class="section_content">
+            La respuesta del reto de la semana pasada está disponible en https://repl.it/@CtrlAltTec/ChallengeRotateMatrix
+        </span>
+    </div>
+    
+
+    <div class="section" style="background: #036703">
+        <img src="https://github.com/Ctrl-Alt-Tec/bits/blob/master/bitsheader.png?raw=true" alt="">
+        <span class="section_content">
+            Durante el transcurso de estas semanas, tendremos lista nuestra plataforma para consultar los bits. Queremos felicitar y agradecer a todos los miembros que con su participación se han ganado bits para poder ser usados en la rifa que haremos al final del semestre. 
+        </span>
+    </div>
+
+    <span class="text">
+        Eso es todo por esta semana, estamos muy entusiasmados por ver qué es lo que logramos. Muchas gracias a todos nuestros integrantes que hacen todo esto posible. <br><br>
+        Eduardo Villalpando Mello,<br>
+        Vicepresidente <hr>
+        Mensaje enviado utilizando Ctrl Alt Tec Mailer <br>
+    </span>
+
+</body>
+</html>

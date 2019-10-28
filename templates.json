@@ -1,0 +1,12 @@
+{
+    "templates": [
+        {
+            "name": "Whatsapp invite",
+            "url": "https://ctrl-alt-tec.github.io/Templates/whatsapp.html"
+        },
+        {
+            "name": "Week Report",
+            "url": "https://ctrl-alt-tec.github.io/Templates/weekreport.html"
+        }
+    ]
+}
